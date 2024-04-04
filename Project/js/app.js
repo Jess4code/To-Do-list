@@ -24,7 +24,7 @@ function addTask() {
     let inputValue = document.querySelector(".input").value.trim();
     if (inputValue !== ""){
         let newEl = document.createElement("li");
-        let id = Math.random();
+        let id = Date.now();
         newEl.id = id;
         newEl.innerHTML = `${inputValue} <button class="delete">Delete</button>`
         newEl.querySelector(".delete").onclick = btnRemove;
@@ -34,6 +34,7 @@ function addTask() {
     document.querySelector(".input").value = '';
     tasks.appendChild(list);
     visibilityChecker();
+    document.querySelector(".input").focus();
 };
 
 function btnRemove(el) {

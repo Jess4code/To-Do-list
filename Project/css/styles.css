@@ -69,6 +69,14 @@ ul li {
     padding-left: 10px;
 }
 
+ul li:hover {
+    background-color: rgb(234, 233, 233);
+}
+
+ul li:active {
+    background-color: aliceblue;
+}
+
 .delete {
     background-color: red;
     border: none;
