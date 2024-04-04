@@ -1,6 +1,5 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 1000px;
 }
 
 .form {
@@ -92,10 +91,21 @@ ul li:active {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 .scroller svg {
     margin-right: 25px;
     width: 35px;
     height: 35px;
+}
+
+.scroller svg:hover {
+    background-color: red;
+    border-radius: 4px;
+}
+
+.scroller svg:active {
+    background-color: white;
+    border-radius: 4px;
 }

@@ -54,8 +54,16 @@ if (lis.length === 0) {
 let scroller = document.querySelector(".scroller");
 
 window.onscroll = () => {
-    if (scrollX > 200) {
-        scroller.classList.toggle("hidden");
-        console.log("hi");
+    if (scrollY > 300) {
+        scroller.classList.remove("hidden");
+    } else {
+        scroller.classList.add("hidden");
     }
+}
+
+scroller.onclick = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    })
 }
